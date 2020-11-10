@@ -1,0 +1,17 @@
+button {
+  background-color: #f66c68;
+  background-image: linear-gradient(to right, orange, #f66c68);
+  color: white;
+  text-align: center;
+  padding: 0.2em;
+  width: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: white;
+    background-image: linear-gradient(to right, white, white);
+    color: #f66c68;
+    border: 2px solid #f66c68;
+  }
+}

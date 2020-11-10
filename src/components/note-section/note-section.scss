@@ -1,0 +1,48 @@
+.container {
+  width: 95%;
+  max-width: 980px;
+
+  margin: 0 auto;
+  margin-top: 1em;
+  & h2 {
+    color: orange;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.add-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pop-up-hidden {
+  display: none;
+}
+.pop-up-visible {
+  position: absolute;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #f66c68;
+  background-image: linear-gradient(to right bottom, orange, #f66c68);
+  animation: visible 0.2s ease-out;
+
+  & button {
+    margin: 0 1em;
+  }
+}
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

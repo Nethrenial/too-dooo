@@ -1,0 +1,65 @@
+.header {
+  background-color: #f66c68;
+  background-image: linear-gradient(to right, orange, #f66c68);
+  color: white;
+  // position: absolute;
+  // width: 100%;
+  // top: 0;
+  text-align: center;
+  padding: 0.5em;
+
+  & h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: "Dancing Script", cursive;
+    animation: moveFromLeft 1.5s;
+    text-align: center;
+  }
+  & p {
+    font-family: "Dancing Script", cursive;
+    animation: moveFromRight 1.5s;
+    margin-top: 0;
+    text-align: center;
+  }
+  & img {
+    display: inline-block;
+    width: 3%;
+    animation: rotate 3s linear infinite;
+  }
+}
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-200px);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(200px);
+  }
+
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

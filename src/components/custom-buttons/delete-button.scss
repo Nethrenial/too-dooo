@@ -1,0 +1,17 @@
+button.delete {
+  background-color: #f66c68;
+  background-image: linear-gradient(to right, orange, red);
+  color: white;
+  text-align: center;
+  padding: 0.2em;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-left: 50px;
+
+  &:hover {
+    background-color: white;
+    background-image: linear-gradient(to right, white, white);
+    color: #f66c68;
+    border: 2px solid #f66c68;
+  }
+}

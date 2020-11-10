@@ -1,0 +1,25 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 100px;
+
+  & li {
+    color: orange;
+    width: 90%;
+    max-width: 980px;
+    overflow: auto;
+    background-color: #eee;
+    border-radius: 5px;
+    margin: 2px auto;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+
+    & p {
+      margin: 0;
+    }
+  }
+}
